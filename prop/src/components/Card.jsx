@@ -1,0 +1,24 @@
+import React from 'react'
+
+const Card = (props) => {
+    // console.log(props);
+    console.log(props.user);
+    console.log(props.age);
+    console.log(props.user , props.age);
+    
+    
+    
+    
+  return (
+    <div>
+      <div className="card">
+              <img src={props.img} alt="image1" />
+              <h1>{props.user},{props.age}</h1>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam, inventore.</p>
+              <button>View Profile</button>
+            </div>
+    </div>
+  )
+}
+
+export default Card
